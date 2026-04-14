@@ -30,7 +30,7 @@ body {
 }
 .heading .para {
   padding-top: 1rem;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   padding-bottom: 1.2rem;
 }
 .inputs {
@@ -64,4 +64,34 @@ input {
   background-color: #012362;
   color: white;
   outline: none;
+}
+/* --- TABLETS (Screens wider than 768px) --- */
+@media (max-width: 760px) {
+  body {
+    margin: 4rem 4rem; /* More breathing room */
+    text-align: left;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+ 
+@media (max-width: 600px) {
+  body {
+    margin-top: 8rem;
+    margin-left: 2rem; /* Your original 8rem looks good here */
+    margin-right: 2rem;
+     text-align: left;
+  }
+
+  #btn {
+    width: 30%; 
+    margin-bottom: 20rem;/* Fixed width looks cleaner on big screens */
+  }
 }
